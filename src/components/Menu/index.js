@@ -13,7 +13,7 @@ export default class Menu extends React.Component {
         {/* <div className="">ScaleConf</div> */}
   
           <li className="pv3">
-            <a href="" className="no-underline white ttu f4">Speakers</a>
+            <a href="" className="no-underline white ttu f4">People</a>
           </li>
           <li className="pv3">
             <a href="" className="no-underline white ttu f4">Venue</a>

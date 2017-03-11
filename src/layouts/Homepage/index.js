@@ -5,7 +5,7 @@ import { joinUri } from "phenomic"
 import Header from "../../components/Header"
 import Contact from "../../fragments/Contact"
 import About from "../../fragments/About"
-import Speakers from "../../fragments/Speakers"
+import People from "../../fragments/People"
 import Venue from "../../fragments/Venue"
 import Scholarships from "../../fragments/Scholarships"
 import CodeOfConduct from "../../fragments/CodeOfConduct"
@@ -55,7 +55,7 @@ const Homepage = ({
         <About />
       </div>
       <div className="bg-speakers" id="speakers">
-        <Speakers />
+        <People />
       </div>
       <div className="bg-dark-dark-blue" id="schedule">
         <Schedule />

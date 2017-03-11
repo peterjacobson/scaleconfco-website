@@ -33,7 +33,7 @@ export default class Nav extends React.Component {
                 <a onClick={this.toggle} href="#about" className="nav__opt">About</a>
               </li>
               <li className="pv3">
-                <a onClick={this.toggle} href="#speakers" className="nav__opt">Speakers</a>
+                <a onClick={this.toggle} href="#speakers" className="nav__opt">People</a>
               </li>
               <li className="pv3">
                 <a onClick={this.toggle} href="#schedule" className="nav__opt">Schedule</a>

@@ -4,7 +4,7 @@ import Modal from 'react-modal'
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import ScheduleData from '../assets/schedule/data'
 
-export default class Speakers extends React.Component {
+export default class People extends React.Component {
   static contextTypes = {
     collection: PropTypes.array,
   }
@@ -63,11 +63,11 @@ export default class Speakers extends React.Component {
 
   render() {
     const { collection } = this.context
-    let rawSpeakers = enhanceCollection(collection, {
+    let rawPeople = enhanceCollection(collection, {
       filter: { speaker: 'yes' }
     })
 
-    let speakers = rawSpeakers.map((speaker) => {
+    let speakers = rawPeople.map((speaker) => {
       let workshop = false
       const talk = ScheduleData.dayTwo.find((session) => session.speaker === speaker.twitter)
       for(let session of ScheduleData.dayOne) {
@@ -86,7 +86,7 @@ export default class Speakers extends React.Component {
     return (
       <div className="pa5 tc mw80 center tl-l">
         <h2 className="section__title section__title--speakers">
-          Speakers
+          People
         </h2>
         <p className="copy--speakers">
           A list of talented smart people
@@ -131,5 +131,5 @@ export default class Speakers extends React.Component {
   }
 }
 
-Speakers.propTypes = {
+People.propTypes = {
 };
