@@ -22,14 +22,7 @@ export default class Hero extends Component {
         <Nav />
         <div className="mw80 w-100 center relative">
           <header className="w-100 tc tl-l w-auto-l">
-            <h1 className="home__title home__title--scaleconf">ScaleConf</h1>
-            <h1 className="home__title home__title--colombia">Colombia </h1>
-            <p className="home__date">
-              Medellín, March 24 - 25 2017
-            </p>
-            <a className="btn btn--home" href="https://ti.to/colombia-dev/scaleconfco">
-              Buy your tickets now
-            </a>
+            <h1 className="home__title home__title--scaleconf">Mindfulness for change</h1>
             <div className="w-20-l w-100">
               <SocialIcons />
             </div>

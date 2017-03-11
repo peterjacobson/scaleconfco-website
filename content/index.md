@@ -1,4 +1,4 @@
 ---
-title: ScaleConf Colombia
+title: Mindfulness for change
 layout: Homepage
 ---
