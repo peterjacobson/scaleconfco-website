@@ -28,6 +28,10 @@
   --padding-vertical: 0.8rem;
 }
 
+.i-header {
+  background-image: url('./assets/images/CJ_2016-02-16_8805.jpg');
+}
+
 .blue {
   color: var(--blue);
 }
