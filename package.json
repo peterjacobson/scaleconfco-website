@@ -1,9 +1,8 @@
 {
   "private": true,
-  "name": "scaleconf-colombia",
+  "name": "mindfulness for change",
   "homepage": "http://scaleconfco.com/",
-  "twitter": "scaleconfco",
-  "facebook": "scaleconfco",
+  "facebook": "mindfulnessforchange",
   "repository": "",
   "googleAnalyticsUA": "UA-84203198-1",
   "scripts": {
@@ -90,7 +89,7 @@
     "root": true,
     "extends": "./node_modules/phenomic/lib/eslint-config-recommended/index.js"
   },
-  "stylelint": {
+  "styleblint": {
     "extends": "./node_modules/phenomic/lib/stylelint-config-recommended/index.js"
   },
   "devDependencies": {
