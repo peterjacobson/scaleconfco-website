@@ -82,16 +82,13 @@ export default class People extends React.Component {
       speaker.talk = talk ? talk.title : workshop ? workshop.title : ''
       return speaker
     })
-
     return (
       <div className="pa5 tc mw80 center tl-l">
         <h2 className="section__title section__title--speakers">
           People
         </h2>
         <p className="copy--speakers">
-          A list of talented smart people
-          that want to share their
-          knowledge with us
+          Who's involved? Why they are here?
         </p>
         <div className="flex flex-wrap justify-center">
           {
@@ -102,8 +99,17 @@ export default class People extends React.Component {
                     <img src={require(`../../src/assets/speakers/${speaker.photo}`)} alt={speaker.name} onClick={this.showProfile.bind(this, speaker)} className="br-100 pointer"/>
                   }
                   <p className="eau-book f-4 bright-green ttu">{speaker.name}</p>
-                  <p className="f-c-t white">{speaker.role} @ {speaker.company}</p>
-                  <p className="f-c-t white">{speaker.talk}</p>
+                  <p className="f-c-t white">{speaker.shortBio}</p>
+                  {
+                    speaker.projectSites &&
+                    speaker.projectSites.map((website, j) => {
+                      return (
+                        <p key={j} className="f-c-t white">
+                          <a target="_blank" href={website}>{website}</a>
+                        </p>
+                      )
+                    })
+                  }
                   { speaker.twitter &&
                     <a href={`https://twitter.com/${speaker.twitter}`} className="green4 dib h-2 w-2-5 br-100 pa2 bg-white mr2">
                       <Icon icon="twitter"></Icon>
