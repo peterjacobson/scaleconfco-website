@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Suscription from '../components/Suscription'
-
 export default class About extends React.Component {
   constructor(props) {
     super(props);
